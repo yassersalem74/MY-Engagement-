@@ -16,27 +16,29 @@ function App() {
       [name]: value,
     }));
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     setSubmissionStatus(null);
 
     try {
-      const response = await fetch(
-        "https://yasser-engagement.runasp.net/api/massage",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
+      // Use HTTPS in production, HTTP in development
+      const API_URL =
+        window.location.hostname === "localhost"
+          ? "http://yasser-engagement.runasp.net/api/massage"
+          : "https://yasser-engagement.runasp.net/api/massage";
+
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
       if (response.ok) {
         setSubmissionStatus("success");
-        setFormData({ name: "", content: "" }); // Reset form
+        setFormData({ name: "", content: "" });
       } else {
         setSubmissionStatus("error");
       }
