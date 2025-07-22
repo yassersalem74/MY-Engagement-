@@ -64,7 +64,7 @@ function App() {
 
         {/* right form */}
         <div className="flex justify-center">
-          <div className="w-full m-4 md:w-[545px] bg-white  rounded-2xl md:custom-shadow pt-4 pb-6 img-back">
+          <div className="w-full m-4 md:w-[545px] bg-white  rounded-2xl md:custom-shadow pt-0 mt-[-12px] md:mt-0 md:pt-4 pb-6 img-back">
             <p className="text-center text-6xl mb-2 md:mb-6 font-medium italian primary-color-font">
               Yasser & Merna
             </p>
