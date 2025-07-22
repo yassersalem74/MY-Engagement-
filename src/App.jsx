@@ -24,7 +24,7 @@ function App() {
 
     try {
       const response = await fetch(
-        "http://yasser-engagement.runasp.net/api/massage",
+        "https://yasser-engagement.runasp.net/api/massage",
         {
           method: "POST",
           headers: {
