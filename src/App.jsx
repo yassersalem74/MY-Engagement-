@@ -55,7 +55,7 @@ function App() {
           {/* left image */}
           <div className="w-4/5 flex justify-center max-w-72  md:w-[calc(var(--spacing)*80)] md:h-[calc(var(--spacing)*100) h-[calc(var(--spacing)*85)]">
             <img
-              src="/public/our.jpeg"
+              src="/our.jpeg"
               alt="our-image"
               className="w-full h-full  rounded-2xl custom-img custom-shadow2 "
             />
@@ -74,7 +74,7 @@ function App() {
                   Forever starts with you{" "}
                 </p>
                 <p className="heart">
-                  <img src="/public/heart.png" alt="" />
+                  <img src="/heart.png" alt="" />
                 </p>
               </div>
               <p className="text-center text-5xl mb-2 font-medium italian primary-color-font">
