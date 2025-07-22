@@ -53,11 +53,11 @@ function App() {
       <div className="flex justify-center flex-col md:flex-row mt-4 md:mt-48">
         <div className="flex justify-center">
           {/* left image */}
-          <div className="w-4/5 flex justify-center max-w-72  md:w-[calc(var(--spacing)*80)] md:h-[calc(var(--spacing)*100) h-[calc(var(--spacing)*85)]">
+          <div className="w-4/5 flex items-center md:items-start justify-center max-w-72  md:w-[calc(var(--spacing)*80)] md:h-[calc(var(--spacing)*100) h-[calc(var(--spacing)*85)]">
             <img
               src="/our.jpeg"
               alt="our-image"
-              className="w-full h-full  rounded-2xl custom-img custom-shadow2 "
+              className="w-4/5 h-5/6  rounded-2xl custom-img custom-shadow2 "
             />
           </div>
         </div>
